@@ -1,0 +1,362 @@
+:root {
+  --background-color: rgb(255, 255, 255);
+  --point-color: rgb(29, 161, 242);
+  --click-color: rgb(150, 208, 249);
+  --line-color: rgb(179, 187, 192);
+  --light-color: rgb(245, 248, 250);
+  --text-color: rgb(20, 23, 26);
+  --margin: 18px;
+}
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  list-style: none;
+}
+* :focus {
+  outline: none;
+}
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+.normal_hr {
+  background: rgb(207, 207, 207);
+}
+.bold {
+  border-top: 10px solid #cccccc;
+}
+line {
+  height: 500px;
+  border-left: thick solid #5f5f5f;
+}
+.all {
+  display: flex;
+  justify-content: center;
+}
+.left {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 270px;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 4;
+}
+.rigth {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 2;
+  margin: 10px;
+  margin-left: 20px;
+}
+.left_Icon > a > i {
+  color: var(--point-color);
+  font-size: 30px;
+  margin: 5px;
+  padding: 10px;
+}
+.left_Icon > a *:hover {
+  background-color: var(--click-color);
+  color: var(--point-color);
+  transition-duration: 0.4s;
+  border-radius: 50px;
+}
+.home > i,
+.home > p {
+  color: var(--point-color);
+}
+nav > a {
+  display: flex;
+  padding: 0 var(--margin);
+  justify-content: left;
+  align-items: center;
+}
+nav > a > i {
+  font-size: 20px;
+  padding: var(--margin) 0;
+  width: 20px;
+}
+nav > a > p {
+  font-size: 20px;
+  margin-left: var(--margin);
+  display: flex;
+}
+nav a:hover {
+  background-color: var(--click-color);
+  color: var(--point-color);
+  transition-duration: 0.4s;
+  border-radius: 50px;
+}
+.left_Icon button {
+  margin: var(--margin);
+  border-radius: 50px;
+  background-color: var(--point-color);
+  color: var(--background-color);
+  width: 250px;
+  height: 50px;
+  border: none;
+  font-size: 17px;
+}
+.left_Icon button:hover {
+  background-color: rgb(36, 101, 141);
+  transition-duration: 0.4s;
+}
+.leftInput {
+  display: flex;
+  align-items: center;
+  padding: var(--margin) 0;
+}
+.left_profile {
+  display: flex;
+  align-items: center;
+  margin: var(--margin);
+}
+.left_profile div p {
+  color: var(--text-color);
+  font-weight: 700;
+}
+.left_profile div .id {
+  color: rgb(109, 109, 109);
+  font-weight: 400;
+}
+.left_profile i {
+  padding-left: 50px;
+  font-size: 20px;
+}
+.center .top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px;
+}
+.center .top a i {
+  color: var(--point-color);
+}
+.mid {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px;
+}
+.mid > a > img {
+  border-radius: 50%;
+  max-width: 50px;
+  height: auto;
+}
+.mid > div {
+  display: flex;
+  flex-direction: column;
+  padding-left: 18px;
+}
+.mid > div > div > input {
+  width: 450px;
+  height: 50px;
+  font-size: 20px;
+  border-style: none;
+  color: var(--line-color);
+}
+.mid > div > div > input:focus {
+  outline: none;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list ol {
+  display: flex;
+}
+.list ol li i {
+  padding-right: 18px;
+  color: var(--point-color);
+}
+.list > button {
+  border-radius: 50px;
+  background-color: var(--click-color);
+  color: var(--background-color);
+  width: 50px;
+  height: 30px;
+  border: none;
+  font-size: 15px;
+}
+.allways_img {
+  border-radius: 50%;
+  max-width: 50px;
+  height: 50px;
+}
+.mini {
+  border-radius: 50%;
+  max-width: 30px;
+  height: auto;
+}
+.main_image {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  border-radius: 5%;
+}
+.retwitte {
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+}
+.retwitte i {
+  padding-right: 7px;
+}
+.retwitte * {
+  color: var(--line-color);
+  font-size: 13px;
+}
+.main_profile {
+  display: flex;
+}
+.nickname {
+  display: flex;
+  align-items: center;
+}
+.imtlist {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+}
+.imtlist * {
+  color: gray;
+}
+.main_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.look {
+  color: var(--point-color);
+  padding: 5px 0;
+}
+.bottom {
+  padding: 10px;
+}
+.name {
+  font-weight: 700;
+  padding-right: 7px;
+}
+.sub {
+  font-size: 13px;
+
+  color: var(--line-color);
+}
+.main_2 {
+  padding-left: 10px;
+}
+.mainwrite p {
+  padding: 5px 0;
+}
+.rigth > div > input {
+  border-style: none;
+  color: rgb(114, 114, 114);
+  background-color: rgb(237, 240, 243);
+  padding-left: 10px;
+}
+.rigth_search {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: rgb(237, 240, 243);
+  width: 300px;
+  padding: 13px;
+  border-radius: 25px;
+}
+.trends {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: rgb(243, 247, 250);
+  margin-top: 10px;
+  border-radius: 25px;
+  padding: 13px;
+}
+.trend {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  justify-content: space-between;
+}
+.trend p {
+  font-size: 20px;
+  font-weight: 700;
+}
+.num {
+  font-size: 13px;
+  color: rgb(122, 123, 131);
+}
+.num_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hash {
+  font-weight: 600;
+}
+.twit {
+  font-size: 13px;
+  color: rgb(122, 123, 131);
+  padding-top: 5px;
+}
+.trends > ol > li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.follow {
+  border-radius: 50px;
+  background-color: rgb(243, 247, 250);
+  color: var(--point-color);
+  width: 70px;
+  height: 30px;
+  border: solid 1px var(--point-color);
+  font-size: 15px;
+  font-weight: 600;
+}
+.trends > .main_3 > a {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.main_3 {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+.trends > .main_3 > a > div {
+  padding-left: 5px;
+}
+.ee {
+  padding: 10px 0 0 10px;
+  font-size: 13px;
+}
+.ee > a {
+  color: var(--line-color);
+  padding-right: 10px;
+}
+.dd {
+  padding: 0 10px;
+  display: flex;
+  padding-bottom: 100px;
+  font-size: 13px;
+}
+.dd > a,
+.dd > p {
+  color: var(--line-color);
+  padding-right: 10px;
+}
+
+.right_line,
+.left_line {
+  display: flex;
+  justify-content: space-between;
+}
